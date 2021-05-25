@@ -1,10 +1,11 @@
 const express = require("express");
 const app = express();
 
+const name = "desconocido";
 
 app.get('/', (req, res) =>{
     
-    const name = req.query.nombre;
+    name = req.query.nombre;
     res.send(`<h1>Hola ${name}!</h1>`);    
 });
 
