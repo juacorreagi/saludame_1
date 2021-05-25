@@ -5,7 +5,10 @@ let name = "desconocido";
 
 app.get('/', (req, res) =>{
     
-    name = req.query.nombre;
+    if(req.query.nombre){
+        name = req.query.nombre;
+    }
+    
     res.send(`<h1>Hola ${name}!</h1>`);    
 });
 
