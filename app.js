@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 
-const name = "desconocido";
+let name = "desconocido";
 
 app.get('/', (req, res) =>{
     
